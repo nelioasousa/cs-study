@@ -1,7 +1,7 @@
 # Description
 About character sets, Unicode, character encodings, and others.
 
-# Readings
+# Resources
 | Title | Recommendation (1-5) |
 | :---  | :---                 |
 | [The Absolute Minimum Every Software Developer [...] Must Know About Unicode [...]](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | 5 |
