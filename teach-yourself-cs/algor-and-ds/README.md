@@ -59,3 +59,10 @@ Those "fundamental structures" can be:
 Permutation is as interesting as it is challenging: a damn lot.
 
 > *We hadn't modeled the problem correctly!*
+
+## Chapter 2: Algorithm Analysis
+Big-Oh: `f(x) = O(g(x))` if there is a positive constant `c` where `c * g(x) >= f(x)` for `x` greater than some initial value `n`.
+
+Omega: `f(x) = Omega(g(x))` if there is a positive constant `c` where `c * g(x) <= f(x)` for `x` greater than some initial value `n`.
+
+Theta: `f(x) = Theta(g(x))` if `f(x) = O(g(x))` and `f(x) = Omega(g(x))` for `x` greater than some initial value `n`.
