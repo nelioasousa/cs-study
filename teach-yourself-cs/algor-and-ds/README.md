@@ -66,3 +66,25 @@ Big-Oh: `f(x) = O(g(x))` if there is a positive constant `c` where `c * g(x) >= 
 Omega: `f(x) = Omega(g(x))` if there is a positive constant `c` where `c * g(x) <= f(x)` for `x` greater than some initial value `n`.
 
 Theta: `f(x) = Theta(g(x))` if `f(x) = O(g(x))` and `f(x) = Omega(g(x))` for `x` greater than some initial value `n`.
+
+## Chapter 3: Data Structures
+There are contiguous data structures and linked data structures, sometimes both (likes Tries). Some advantages of linked structures over arrays:
+- There's no "running out of bounds", since a arbitrary located memory space can be linked to the structure;
+- Insertion and deletion are more simple, since there's no need to keep the structure contiguous;
+- With large records (large objects being store in memory), moving pointers is easier than moving the objects itself.
+
+Now, the advatages of arrays (continguous structures) over linked structures:
+- Space efficiency, since there's no need to reserve memory for pointers (linked strucures have more metadata);
+- Random access, allowing constant time lookups given the item index;
+- Better memory locality and cache performance than random pointer jumping.
+
+A dictionary is an abstract data type for storing mappings of elements (key-value pairs). To store an object `x` in a dictionary, we must supply a key that uniquely identifies this object. The key can be embedded in the object (e.g., as an attribute `x.key`) or can be externally supplied. The object can then be queried using only the key. The operatios supported by a dictionary can be summarized as:
+- `Search(D, k)`: `D` is the dictionary instance and `k` is the key;
+- `Insert(D, x)`: `x` is the object to be stored in the dictionary using `x.key` as the key;
+- `Delete(D, x)`: `x` is the object to be deleted (if present) from the dicitonary `D`;
+
+Some dictionary implementations remember the order of insertion, while others store the keys in sorted order. It is also common to not guarantee any specific order of iteration over the dictionary elements, especially in hash table implementations.
+
+The book pointed out the efficiency of basic operations in dictionary implementations using sorted and unsorted arrays, singly linked lists, and doubly linked lists.
+
+The book have a really good introduction to binary search trees and about they insertion/search/deletion operations and efficiency. Also, briefly explain balanced binary trees.
