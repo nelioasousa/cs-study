@@ -88,3 +88,18 @@ Some dictionary implementations remember the order of insertion, while others st
 The book pointed out the efficiency of basic operations in dictionary implementations using sorted and unsorted arrays, singly linked lists, and doubly linked lists.
 
 The book have a really good introduction to binary search trees and about they insertion/search/deletion operations and efficiency. Also, briefly explain balanced binary trees.
+
+## Chapter 4: Sorting
+Many algorithms and data structures are build around sorting.
+
+> An important algorithm design technique is to use sorting as a basic building block, because many other problems become easy once a set of items is sorted.
+
+Most of the time, the sorting procedure is abstracted away from the programmer by the programming language. The programmer usually doesn't need to know which sorting algorithm they are using, they just need a practical interface that allows application-specific sorting configuration. Since sorting algorithms are rarely the bottleneck of an algorithm, algorithm designers don't usually need to write they own sorting procedure.
+
+> The name `qsort` [from the C language `stdlib.h` library] suggests that quicksort is the algorithm implemented in this library function, although this is usually irrelevant to the user.
+
+The best sorting algorithms are all `O(n x log(n))` at best, with some being a bit faster than others in certain contexts. There aren't any sorting algorithms with a better asymptotic performance. Some analyses suggest that the lower bound for sorting is `Omega(n x log(n))`.
+
+Heapsorting is an interesting algorithm, and a got a nice dive into the heap data structure.
+
+Quicksort is an interesting in-place sorting algorithm and apparently easy to implement. But from section 4.8 (War Story: Skiena for the Defense), I developed a stronger liking for mergesort, which can be used to sort blocks of data that are larger than the computer's main memory.
